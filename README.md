@@ -25,13 +25,13 @@ Likely compatible with many other RK3326/RK3566 ArkOS handhelds using EmulationS
 * Automatic screenshot exporting
 * Lightweight ArkOS-friendly design
 * Uses framebuffer capture through FFmpeg
-* No phone camera needed
+* Dependencies Pre-Compiled
 
 ---
 
 ## Installation
 
-Extract BOTH items directly into:
+Extract ALL items directly into:
 
 ```bash
 /roms/tools/
@@ -40,7 +40,8 @@ Extract BOTH items directly into:
 Final structure should look like:
 
 ```bash
-/roms/tools/ESScreenshot.sh
+/roms/tools/ES-Screenshot.sh
+/roms/tools/Disable-ES-Screenshot.sh
 /roms/tools/ESScreenshot/
 ```
 
@@ -48,21 +49,41 @@ Final structure should look like:
 
 ## Usage
 
-1. Launch:
+### Enable Screenshot Daemon
+
+Launch:
 
 ```bash
-ESScreenshot.sh
+ES-Screenshot.sh
 ```
 
 from the ArkOS Tools/Ports menu.
 
-2. After enabling the daemon, press:
+This enables the persistent screenshot daemon.
+
+---
+
+### Take Screenshot
+
+Press:
 
 ```bash
 L2 + R2
 ```
 
-at the same time to take a screenshot.
+at the same time to capture a screenshot.
+
+---
+
+### Disable Screenshot Daemon
+
+Launch:
+
+```bash
+Disable-ES-Screenshot.sh
+```
+
+to stop the background screenshot daemon without rebooting ArkOS.
 
 ---
 
@@ -87,6 +108,6 @@ Screenshots are automatically saved to:
 
 ## Credits
 
-Created for the PIXEL OS ecosystem.
+Created for taking screenshots of ES-Theme ecosystems, ArkOS tools/ports, etc.
 
-Built and refined through extensive testing on ArkOS handhelds.
+Built and refined through extensiv
