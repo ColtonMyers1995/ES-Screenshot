@@ -109,5 +109,3 @@ Screenshots are automatically saved to:
 ## Credits
 
 Created for taking screenshots of ES-Theme ecosystems, ArkOS tools/ports, etc.
-
-Built and refined through extensiv
